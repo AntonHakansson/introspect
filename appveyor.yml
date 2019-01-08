@@ -1,8 +1,8 @@
-# scripts to run before build
 image: Visual Studio 2017
 
+# scripts to run before build
 before_build:
-  call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
+  shell\setVcArgs.bat
 
 # to run your custom scripts instead of automatic MSBuild
 build_script:
